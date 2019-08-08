@@ -1,0 +1,405 @@
+﻿
+<!DOCTYPE html>
+<html>
+<head>
+<title>NetError's Projects - Bots, experiments, open-source, coding!</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+<meta name="description" content="NetError's Projects is an awesome website where you can find many projects and experiments like intelligent bots and a lot of useful resources.">
+<meta name="keywords" content="neterror, projects, artificial intelligence, ai, bots, developing, javascript, js, free, templates, test, notai, notai bot, online, test, test notai bot, notai ai bot, coding, open source, bots, chatbot, free chat, experiments">
+<meta name="author" content="NetError">
+
+
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css">
+
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.5.9/css/mdb.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+<link href="inc\css\timeline.min.css" rel="stylesheet" type="text/css" media="all">
+<link href="inc\css\social_buttons.min.css" rel="stylesheet" type="text/css" media="all">
+<link rel="icon" sizes="192x192" href="inc\img\favicon\favicon-mobile.png">
+<link rel="shortcut icon" type="image/x-icon" href="inc\img\favicon\favicon.ico">
+<link rel="apple-touch-icon" href="inc\img\favicon\favicon-mobile.png">
+<meta name="theme-color" content="#343a40">
+<meta name="msapplication-TileColor" content="#343a40">
+<style>
+    .fixed-nav-index {
+      z-index: 999;
+    }
+
+    .card-deck a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .modal a {
+      text-decoration: none;
+      color: black;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif !important;
+    }
+
+    @font-face {
+      font-family: 'poetsen_oneregular';
+      src: url('inc/css/poetsenone-regular-webfont.woff') format('woff');
+      font-weight: normal;
+      font-style: normal;
+
+    }
+
+    .caption {
+      position: absolute;
+      margin: 0;
+      top: 45%;
+      left: 50%;
+      margin-right: -50%;
+      transform: translate(-50%, -50%);
+    }
+
+    .font {
+      font-family: poetsen_oneregular, arial, sans-serif;
+      font-size: 4.5rem;
+      color: white;
+    }
+
+    .subfont {
+      font-size: 2.5rem;
+    }
+
+    body {
+      font-weight: 300 !important;
+    }
+
+    .card-footer {
+      border-top: none !important;
+    }
+
+    @media only screen and (max-width: 600px) {
+      .font {
+        font-size: 3rem;
+      }
+
+      .subfont {
+        font-size: 1.5rem;
+      }
+    }
+
+    .slant {
+      transform: skewY(-3deg);
+    }
+
+    .slant-rev {
+      transform: skewY(3deg);
+    }
+
+    .navbar-no-shadow {
+      box-shadow: none;
+    }
+
+    .bg-dark {
+      -webkit-box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important;
+    }
+
+    .scroll-navbar {
+      -webkit-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+      -o-transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+      transition: background 0.5s ease-in-out, padding 0.5s ease-in-out;
+      padding-top: 12px !important;
+      padding-bottom: 12px !important;
+    }
+
+    .card {
+      max-width: 270px;
+      min-width: 215px;
+    }
+
+    .parallax-background {
+      background-image: url('inc/img/index/background_bck.png');
+      height: 32rem;
+      transform-origin: 0;
+      width: 100%;
+      background-attachment: fixed;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+	
+	.glow {
+  text-shadow: 5px 5px 100px #ffe02e;
+  color: #ffe02e;
+
+}
+  </style>
+</head>
+<!-- Chat -->
+<script>
+    (function(d, w, c) {
+        w.ChatraID = '7gTjBPtruZEtre8sB';
+        var s = d.createElement('script');
+        w[c] = w[c] || function() {
+            (w[c].q = w[c].q || []).push(arguments);
+        };
+        s.async = true;
+        s.src = 'https://call.chatra.io/chatra.js';
+        if (d.head) d.head.appendChild(s);
+    })(document, window, 'Chatra');
+</script>
+<script>
+window.ChatraSetup = {
+    colors: {
+        buttonBg: '#ffc400'    /* chat button background color */
+    }
+};
+</script>
+<!-- /Chat -->
+<body data-spy="scroll" data-target=".navbar" class="bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark navbar-no-shadow fixed-nav-index fixed-top scroll-navbar">
+<div class="navbar-brand"><img src="images\favicon.png?type=navbar" width="30" height="30" class="d-inline-block align-top mr-1" alt=""> NetError's Projects</div>
+<button class="navbar-toggler" type="button" data-toggle="modal" data-target="#myModal" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+<ul class="navbar-nav ml-auto">
+<li class="nav-item mx-2">
+<a class="nav-link" target="_blank" href="#"><i class="fas fa-people-carry"></i> Contribute</a>
+</li>
+<li class="nav-item mx-2">
+<a class="nav-link" target="_blank" href="https://neterror.pw/notai"><i class="fas fa-flask"></i> Test Notai</a>
+</li>
+
+<li class="nav-item mx-2">
+<a class="nav-link" target="_blank" href="https://discordapp.com/invite/UXzUdTP"><i class="fab fa-discord mr-1"></i> Discord </a>
+</li>
+<li class="nav-item active mx-2">
+<a class="nav-link" target="_blank" href="https://github.com/neterror420"><i class="fab fa-github mr-1"></i> GitHub</a>
+</li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="shared\flags\gb.png"> English </a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" onclick="if (!window.__cfRLUnblockHandlers) return false; setLocale('en-GB')" data-cf-modified-2510978fa8f2e202a6e17cf7-=""><img src="shared\flags\gb.png"> English</a>
+<a class="dropdown-item" onclick="if (!window.__cfRLUnblockHandlers) return false; setLocale('ro-RO')" data-cf-modified-2510978fa8f2e202a6e17cf7-=""><img src="shared\flags\ro.png"> Română</a>
+</div>
+</li>
+</ul>
+</div>
+</nav>
+<div class="modal fade" id="myModal">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header mx-3">
+<div class="navbar-brand"><img src="images\favicon.png?type=navbar" width="30" height="30" class="d-inline-block align-top mr-1" alt=""> NetError's Projects</div>
+<button type="button" class="close" data-dismiss="modal"><i class="fas fa-times"></i></button>
+</div>
+<div class="modal-body mx-0 px-0" style="font-weight: 300">
+<a class="nav-link" target="_blank" href="#"><i class="fas fa-people-carry"></i> Contribute</a>
+<a class="nav-link" target="_blank" href="https://neterror.pw/notai"><i class="fas fa-flask"></i> Test Notai</a>
+<a class="nav-link" target="_blank" href="https://discordapp.com/invite/UXzUdTP"><i class="fab fa-discord mr-1"></i> Discord </a>
+<a class="nav-link" target="_blank" href="https://github.com/neterror420"><i class="fab fa-github mr-1"></i> GitHub</a>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+<img src="shared\flags\gb.png"> English </a>
+<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+<a class="dropdown-item" onclick="if (!window.__cfRLUnblockHandlers) return false; setLocale('en-GB')" data-cf-modified-2510978fa8f2e202a6e17cf7-=""><img src="shared\flags\gb.png"> English</a>
+<a class="dropdown-item" onclick="if (!window.__cfRLUnblockHandlers) return false; setLocale('ro-RO')" data-cf-modified-2510978fa8f2e202a6e17cf7-=""><img src="shared\flags\ro.png"> Română</a>
+</div>
+</li>
+</div>
+</div>
+</div>
+</div>
+<div class="container-fluid">
+<div class="row justify-content-center">
+<div class="col-12 p-0 mb-3 text-center">
+<div class="parallax-background"></div>
+<div class='bg-dark slant-rev' style='height: 100%; width: 100%; position: absolute'></div>
+<div class='bg-dark slant' style='height: 100%; width: 100%; position: absolute'></div>
+<div class="caption font">
+<br>
+<div class="glow"><font color="#ffffff">Net</font>Error<font color="#ffffff" size="10">.pw</font></div>
+<font face="Arial" size="4" color="white">Welcome! You can test right now some projects and experiments below.</font>
+</div>
+</div>
+<div class="col-12 align-items-center justify-content-center text-center mb-4">
+</div>
+<div class="col-md-9 col-11 mb-3" id="projects">
+<div class="card-deck row p-0 m-0 justify-content-center align-content-center">
+<a target="_blank" href="#">
+<div class="card mx-2 mb-3" style="min-width: 200px">
+  <div class="card-header">
+    Our Best Project <i class="fas fa-check-circle"> <i class="fas fa-medal"></i></i>
+  </div>
+<img class="card-img-top" src="inc\img\projects\notai.png" alt="Notai">
+<div class="card-body text-center">
+<h4 class="card-title"><a href="https://www.spigotmc.org/resources/41869/" target="_blank">Notai Online Bot</a></h4>
+<p class="card-text">A bot that can answer your questions. It's still under development.
+<div><a class="btn btn-success" href="#" role="button">Talk to the bot</a></div>
+</div>
+<p class="card-footer text-muted my-0" >Notai is online and will learn from you.</p>
+</div>
+</a>
+<a target="_blank" href="#">
+<div class="card mx-2 mb-3">
+<img class="card-img-top" src="inc\img\projects\netbot.jpg" alt="netbot">
+<div class="card-body text-center">
+<h4 class="card-title"><a href="#" target="_blank">netbot <i class="fab fa-discord"></i></a></h4>
+<p class="card-text">The netbot discord bot. You can invite him to your Discord server.</p>
+<a class="btn btn-primary" href="#" role="button">Invite netbot</a><div>
+</div>
+</div>
+<p class="card-footer text-muted my-0">NetBot is a Discord bot. <a href="#" target="_blank">Learn more</a> <i class="fas fa-arrow-right"></i></p>
+</div>
+</a>
+<a target="_blank" href="#">
+<div class="card mx-2 mb-3">
+<img class="card-img-top" src="inc\img\projects\comingsoon.jpg" alt="Coming Soon">
+<div class="card-body text-center">
+<h4 class="card-title"><a href="#" target="_blank">Coming Soon</a>
+</h4>
+<p class="card-text">There will be something soon. Meanwhile, you can test our other experiments.</p>
+<a class="btn btn-warning" href="#" role="button">Submit project</a>
+</div>
+<p class="card-footer text-muted my-0">You can add your project here if you want.</p>
+</div>
+</a>
+<a target="_blank" href="#">
+<div class="card mx-2 mb-3">
+<img class="card-img-top" src="inc\img\projects\comingsoon.jpg" alt="Coming Soon">
+<div class="card-body text-center">
+<h4 class="card-title"><a href="#" target="_blank">Coming Soon</a>
+</h4>
+
+<p class="card-text">There will be something soon. Meanwhile, you can test our other experiments.</p>
+<a class="btn btn-warning" href="#" role="button">Submit project</a>
+
+</div>
+
+<p class="card-footer text-muted my-0">You can add your project here if you want.</p>
+</div>
+</a>
+<a target="_blank" href="#">
+<div class="card mx-2 mb-3">
+<img class="card-img-top" src="inc\img\projects\comingsoon.jpg" alt="Coming Soon">
+<div class="card-body text-center">
+<h4 class="card-title"><a href="#" target="_blank">Coming Soon</a>
+</h4>
+<p class="card-text">There will be something soon. Meanwhile, you can test our other experiments.
+</p>
+<a class="btn btn-warning" href="#" role="button">Submit project</a>
+</div>
+<p class="card-footer text-muted my-0">You can add your project here if you want.</p>
+</div>
+</a>
+<a target="_blank" href="#">
+<div class="card mx-2 mb-3">
+<img class="card-img-top" src="inc\img\projects\comingsoon.jpg" alt="Coming Soon">
+<div class="card-body text-center">
+<h4 class="card-title"><a href="#" target="_blank">Coming Soon</a>
+</h4>
+<p class="card-text">There will be something soon. Meanwhile, you can test our other experiments.
+</p>
+<a class="btn btn-warning" href="#" role="button">Submit project</a>
+</div>
+<p class="card-footer text-muted my-0">You can add your project here if you want.</p>
+</div>
+</a>
+</div>
+</div>
+<div class="col-12 align-items-center justify-content-center text-center mb-4">
+<div class="display-md-3 display-4"><i class="fas fa-user-circle"></i> <font color="#ffffff">Who I am</font></div>
+</div>
+<div class="col-xl-8 col-lg-9 col-md-10 col-11 my-3" id="about">
+<p class="text-center px-5"><font color="#ffffff">I develop independent projects, many of them <strong>open source and
+free for everyone</strong>. If you need me to do something for you, like a website, feel free to contact me at request@neterror.pw. You can also e-mail me at ask@neterror.pw if you have any questions.</p></font> 
+</div>
+<div class="col-12 align-items-center justify-content-center text-center mb-4">
+<div class="display-md-3 display-4"><i class="fas fa-question-circle"></i><font color="#ffffff"> Support </font></div>
+</div>
+
+<p class="text-center px-5"><font color="#ffffff">I offer <strong>free support</strong>. You can ask me anything.</p></font>
+
+<a href="https://discord.gg/xRkBad4" target="_blank" class="btn btn-primary btn-lg btn-block" role="button">Discord</a>
+
+<button onclick="Chatra('openChat', true)" type="button" class="btn btn-red btn-lg btn-block">LiveChat Support</button>
+<a href="https://github.com/neterror420" target="_blank" class="btn btn-warning btn-lg btn-block" role="button">Github Support</a>
+<a href="https://neterror.pw/contact" class="btn btn-dark btn-lg btn-block" role="button">Contact Me</a>
+
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<footer class="page-footer font-small bg-dark">
+<div class="container">
+<div class="row">
+<div class="col-md-12 py-4">
+<div class="mb-5 flex-center">
+<a href="https://discord.gg/xRkBad4" target="_blank" class="btn-social btn-discord fab fa-discord fa-lg white-text mr-md-4 mr-2 fa-x" style="text-decoration: none"> </a>
+<a href="#" class="btn-social btn-youtube fab fa-youtube fa-lg white-text mr-md-4 mr-2 fa-x" style="text-decoration: none"> </a>
+<a href="https://github.com/neterror420" class="btn-social btn-github fab fa-github fa-lg white-text mr-md-4 mr-2 fa-x" style="text-decoration: none"> </a>
+<a href="https://neterror.pw/notai" class="btn-social btn-beta mr-md-4 mr-2 fas fa-vial fa-lg white-text fa-x" style="text-decoration: none"> </a>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-copyright text-center py-3">© 2019 NetError. All rights reserved.</div>
+</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' type="2510978fa8f2e202a6e17cf7-text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" type="2510978fa8f2e202a6e17cf7-text/javascript"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="2510978fa8f2e202a6e17cf7-text/javascript"></script>
+<script type="2510978fa8f2e202a6e17cf7-text/javascript">
+    $('body').scrollspy({target: ".navbar"})
+    $(function () {
+        $(document).scroll(function () {
+            var $nav = $(".navbar");
+            $nav.toggleClass('bg-dark', $(this).scrollTop() >= $("#projects").position().top - 300);
+        });
+    });
+    $(function () {
+        var SCROLLING_NAVBAR_OFFSET_TOP = 300;
+        $(window).on('scroll', function () {
+            var $navbar = $('.navbar');
+
+            if ($navbar.length) {
+                if ($navbar.offset().top > SCROLLING_NAVBAR_OFFSET_TOP) {
+                    $('.scroll-navbar').addClass('top-nav-collapse');
+                } else {
+                    $('.scroll-navbar').removeClass('top-nav-collapse');
+                }
+            }
+        });
+    });
+    getDownloads(41869);
+    getDownloads(44703);
+    getDownloads(46655);
+    getDownloads(66614);
+    getUserVoiceStats();
+
+    function getDownloads(id) {
+        $.ajax({
+            url: "https://api.spiget.org/v2/resources/" + id,
+            async: true,
+            dataType: 'json',
+            cache: true,
+            success: function (data) {
+                let str = document.getElementById('downloads-' + id).innerHTML;
+                document.getElementById('downloads-' + id).innerHTML = str.replace("0", data.downloads);
+            }
+        });
+    }
+
+
+    function setLocale(locale) {
+        let date = new Date();
+        date.setTime(date.getTime() + 30 * 6 * 24 * 60 * 60 * 1000 /* 6 months */);
+        document.cookie = "preferred_locale=" + locale + "; expires=" + date.toUTCString() + ";path=/;domain=.neterror.pw";
+        window.location.reload(false);
+    }
+</script>
+<script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="2510978fa8f2e202a6e17cf7-|49" defer=""></script></body>
+</html>
