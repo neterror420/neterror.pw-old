@@ -362,54 +362,5 @@ free for everyone</strong>. If you need me to do something for you, like a websi
 <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js' type="2510978fa8f2e202a6e17cf7-text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" type="2510978fa8f2e202a6e17cf7-text/javascript"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" type="2510978fa8f2e202a6e17cf7-text/javascript"></script>
-<script type="2510978fa8f2e202a6e17cf7-text/javascript">
-    $('body').scrollspy({target: ".navbar"})
-    $(function () {
-        $(document).scroll(function () {
-            var $nav = $(".navbar");
-            $nav.toggleClass('bg-dark', $(this).scrollTop() >= $("#projects").position().top - 300);
-        });
-    });
-    $(function () {
-        var SCROLLING_NAVBAR_OFFSET_TOP = 300;
-        $(window).on('scroll', function () {
-            var $navbar = $('.navbar');
-
-            if ($navbar.length) {
-                if ($navbar.offset().top > SCROLLING_NAVBAR_OFFSET_TOP) {
-                    $('.scroll-navbar').addClass('top-nav-collapse');
-                } else {
-                    $('.scroll-navbar').removeClass('top-nav-collapse');
-                }
-            }
-        });
-    });
-    getDownloads(41869);
-    getDownloads(44703);
-    getDownloads(46655);
-    getDownloads(66614);
-    getUserVoiceStats();
-
-    function getDownloads(id) {
-        $.ajax({
-            url: "https://api.spiget.org/v2/resources/" + id,
-            async: true,
-            dataType: 'json',
-            cache: true,
-            success: function (data) {
-                let str = document.getElementById('downloads-' + id).innerHTML;
-                document.getElementById('downloads-' + id).innerHTML = str.replace("0", data.downloads);
-            }
-        });
-    }
-
-
-    function setLocale(locale) {
-        let date = new Date();
-        date.setTime(date.getTime() + 30 * 6 * 24 * 60 * 60 * 1000 /* 6 months */);
-        document.cookie = "preferred_locale=" + locale + "; expires=" + date.toUTCString() + ";path=/;domain=.neterror.pw";
-        window.location.reload(false);
-    }
-</script>
 <script src="https://ajax.cloudflare.com/cdn-cgi/scripts/95c75768/cloudflare-static/rocket-loader.min.js" data-cf-settings="2510978fa8f2e202a6e17cf7-|49" defer=""></script></body>
 </html>
